@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	if (!window.location.protocol.startsWith("https:") && !window.location.protocol.startsWith("file:")){
-		window.location = "https://www.kmbeta.ml/app/";
+		window.location = window.location.href.replace("http", "https");
 	}
 	
 	$("#quickSelectBusRouteBtn").click(function(){
